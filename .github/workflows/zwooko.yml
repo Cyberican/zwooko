@@ -1,9 +1,9 @@
-name: Greetings
+name: Zwooko
 
 on: [pull_request_target, issues]
 
 jobs:
-  greeting:
+  zwooko:
     runs-on: ubuntu-latest
     permissions:
       issues: write
@@ -12,5 +12,5 @@ jobs:
     - uses: actions/first-interaction@v1
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        issue-message: "Message that will be displayed on users' first issue"
-        pr-message: "Message that will be displayed on users' first pull request"
+        issue-message: "Thanks for help us out with our project!"
+        pr-message: "We have received the pull request and will review it ASAP! :-)"
